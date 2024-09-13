@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bodyOfbabes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="accueil">
+        <h1>Bienvenue sur bodyOfbabes</h1>
+        <p>Découvrez les créateurs les plus captivants sur OnlyFans !</p>
+        <a href="#rejoindre-nous" class="btn">Rejoindre Nous</a>
+        <a href="#explorer-createurs" class="btn">Explorer les Créateurs</a>
+    </section>
+
+    <section id="rejoindre-nous">
+        <h2>Rejoindre Nous</h2>
+        <p>Si vous êtes un créateur de contenu et souhaitez rejoindre notre plateforme, veuillez remplir le formulaire ci-dessous pour nous faire part de votre intérêt. Nous vous contacterons avec plus de détails.</p>
+        <form action="submit_creator_form.php" method="post">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="site-web">Site Web:</label>
+            <input type="url" id="site-web" name="site-web">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <section id="explorer-createurs">
+        <h2>Explorer les Créateurs</h2>
+        <p>Découvrez nos créateurs vedettes et explorez leurs profils. Chaque créateur offre un contenu unique et exclusif.</p>
+        <div class="creators">
+            <div class="creator-card">
+                <img src="creator1.jpg" alt="Créateur 1">
+                <h3>Créateur 1</h3>
+                <p>Descriptions brèves sur le créateur.</p>
+                <a href="#" class="btn">Voir le Profil</a>
+            </div>
+            <div class="creator-card">
+                <img src="creator2.jpg" alt="Créateur 2">
+                <h3>Créateur 2</h3>
+                <p>Descriptions brèves sur le créateur.</p>
+                <a href="#" class="btn">Voir le Profil</a>
+            </div>
+            <!-- Ajoute plus de cartes de créateurs ici -->
+        </div>
+    </section>
+
+    <section id="a-propos">
+        <h2>À Propos</h2>
+        <p>Notre mission est de connecter les créateurs talentueux avec des abonnés passionnés.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="service">
+            <h3>Pour les Créateurs</h3>
+            <p>Gestion des abonnements, promotion, et support.</p>
+        </div>
+        <div class="service">
+            <h3>Pour les Abonnés</h3>
+            <p>Accès à un contenu exclusif et interactions uniques.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="post">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <!-- Articles de blog seront ajoutés ici -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 bodyOfbabes. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

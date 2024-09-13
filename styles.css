@@ -1,0 +1,260 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+section {
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: perspective(1000px) rotateX(-5deg) rotateY(5deg);
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff6f61, #de624d);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #de624d, #ff6f61);
+    transform: translateY(-2px);
+}
+
+/* Styles pour la section "Rejoindre Nous" */
+#rejoindre-nous {
+    background: #e0f7fa;
+}
+
+#rejoindre-nous h2 {
+    color: #00796b;
+}
+
+#rejoindre-nous form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#rejoindre-nous form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#rejoindre-nous form input, #rejoindre-nous form textarea {
+    width: calc(100% - 22px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+#rejoindre-nous form input:focus, #rejoindre-nous form textarea:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+#rejoindre-nous form button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#rejoindre-nous form button:hover {
+    background: #004d40;
+    transform: translateY(-2px);
+}
+
+/* Styles pour la section "Explorer les Créateurs" */
+#explorer-createurs {
+    background: #fff3e0;
+}
+
+#explorer-createurs h2 {
+    color: #f57c00;
+}
+
+.creators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.creator-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: calc(33% - 30px);
+}
+
+.creator-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.creator-card h3 {
+    margin-top: 15px;
+    color: #d32f2f;
+}
+
+.creator-card p {
+    color: #555;
+}
+
+.creator-card .btn {
+    background: #f57c00;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+/* Styles pour la section "À Propos" */
+#about {
+    background: #fafafa;
+}
+
+#about h2 {
+    color: #333;
+}
+
+/* Styles pour la section "Services" */
+#services {
+    background: #f0f0f0;
+}
+
+#services .service {
+    margin-bottom: 20px;
+}
+
+/* Styles pour la section "Contact" */
+#contact {
+    background: #e8f5e9;
+}
+
+#contact form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#contact form input, #contact form textarea {
+    width: calc(100% - 22px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+#contact form input:focus, #contact form textarea:focus {
+    border-color: #66bb6a;
+    outline: none;
+}
+
+#contact form button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #66bb6a;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#contact form button:hover {
+    background: #388e3c;
+    transform: translateY(-2px);
+}
+
+/* Styles pour le Footer */
+footer {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
